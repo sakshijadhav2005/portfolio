@@ -3,333 +3,271 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sakshi Jadhav - Portfolio</title>
+    <title>Sakshi Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"/>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar" id="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <a href="#home" class="logo-link">
-                    <i class="fas fa-code"></i>
-                    <span>Portfolio</span>
-                </a>
+    <header class="navbar">
+        <div class="container nav">
+            <a href="#home" class="brand"><i class="fa-solid fa-graduation-cap"></i><span>Portfolio</span></a>
+            <nav>
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#languages" class="nav-link">Languages</a>
+                <a href="#achievements" class="nav-link">Achievements</a>
+                <a href="#academics" class="nav-link">Academics</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#certifications" class="nav-link">Certifications</a>
+                <a href="#activities" class="nav-link">Activities</a>
+                <a href="#goals" class="nav-link">Goals</a>
+                <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme"><i class="fa-solid fa-moon"></i></button>
+            </nav>
+        </div>
+    </header>
+
+    <div class="progress"><div class="bar" id="progress-bar"></div></div>
+    <main id="home" class="hero">
+        <div class="container hero-grid">
+            <div class="hero-text">
+                <h1>Hi, I'm <span class="accent">Sakshi</span></h1>
+                <p class="tagline"><span id="typing"></span></p>
+                <p class="intro">I'm a passionate Computer Science and business systems student interested in AI and Web Development. Currently pursuing CSBS in 3rd year, I love building innovative solutions that solve real-world problems. From fitness tracking apps to life management tools, I enjoy creating user-centric applications using modern technologies like Python, React, and cloud platforms.</p>
+                <div class="contact-row">
+                    <a href="jadhavsakshi389@gmail.com" class="chip"><i class="fa-solid fa-envelope"></i>Email</a>
+                    <a href="https://www.linkedin.com/in/sakshi-jadhav-3b5408337/" class="chip"><i class="fa-brands fa-linkedin"></i>LinkedIn</a>
+                    <a href="https://github.com/sakshijadhav2005/" class="chip"><i class="fa-brands fa-github"></i>GitHub</a>
+                 
+                </div>
+                <ul class="meta">
+                    <li><strong>Name:</strong>Sakshi</li>
+                    <li><strong>Roll No.:</strong>CB302</li>
+                    <li><strong>Department/Year:</strong> CSBS, 3rd Year</li>
+                   
+                </ul>
             </div>
-            <ul class="nav-menu" id="nav-menu">
-                <li class="nav-item">
-                    <a href="#home" class="nav-link active">
-                        <i class="fas fa-home"></i>
-                        <span>Home</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="#about" class="nav-link">
-                        <i class="fas fa-user"></i>
-                        <span>About</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="#skills" class="nav-link">
-                        <i class="fas fa-cogs"></i>
-                        <span>Skills</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="#projects" class="nav-link">
-                        <i class="fas fa-briefcase"></i>
-                        <span>Projects</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="#contact" class="nav-link">
-                        <i class="fas fa-envelope"></i>
-                        <span>Contact</span>
-                    </a>
-                </li>
-                <li class="nav-item theme-toggle-container">
-                    <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
-                        <i class="fas fa-moon"></i>
-                    </button>
-                </li>
-            </ul>
-            <div class="hamburger" id="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
+            <div class="hero-card glass">
+                <div class="avatar" height="10"width="100">
+                    <img src="sakshi.jpeg" alt="Sakshi Jadhav - Profile Photo">
+                </div>
+                <div class="links-grid">
+                    <a href="https://www.linkedin.com/in/sakshi-jadhav-3b5408337/" class="chip"><i class="fa-brands fa-linkedin"></i>LinkedIn</a>
+                    <a href="https://github.com/sakshijadhav2005/" class="chip"><i class="fa-brands fa-github"></i>GitHub</a>
+                </div>
+                <p class="mission"><strong>Mission:</strong> Build scalable systems that positively impact people’s lives.</p>
             </div>
         </div>
-    </nav>
+        <div class="floats">
+            <div class="float a"></div>
+            <div class="float b"></div>
+            <div class="float c"></div>
+        </div>
+    </main>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-container">
-            <div class="hero-content">
-                <h1 class="hero-title">
-                    Hi, I'm <span class="highlight">Sakshi Jadhav</span>
-                </h1>
-                <h2 class="hero-subtitle">Full Stack Developer</h2>
-                <p class="hero-description">
-                    I create beautiful, responsive websites and applications that provide exceptional user experiences.
-                </p>
-                <div class="hero-buttons">
-                    <a href="#projects" class="btn btn-primary">View My Work</a>
-                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
-                </div>
+    <section id="languages" class="section">
+        <div class="container">
+            <h2 class="section-title">Languages Known</h2>
+            <div class="pill-row">
+                <span class="pill">Marathi</span>
+                <span class="pill">English</span>
+                <span class="pill">Hindi</span>
+                
             </div>
-            <div class="hero-image">
-                <div class="profile-card">
-                    <div class="profile-image">
-                        <img src="sakki.jpeg" alt="Your Name - Portfolio" class="profile-img">
+        </div>
+    </section>
+
+    <section id="achievements" class="section alt">
+        <div class="container">
+            <h2 class="section-title">Achievements & Awards</h2>
+            <div class="cards">
+                
+                <article class="card">
+                    <h3>Cold Case Competition</h3>
+                    <p>Won runnerup place at Cold Case Competition among 50+ teams.</p>
+                </article>
+                
+            </div>
+        </div>
+    </section>
+
+    <section id="academics" class="section">
+        <div class="container">
+            <h2 class="section-title">Academics</h2>
+            <div class="grid-2">
+                <div class="card">
+                    <ul class="list">
+                        <li><strong>10th:</strong>L.G.Bansude Semi English Medium School, 2021, 96.80%</li>
+                        <li><strong>Diploma:</strong>Government Polytechinc Awasari(kh), 2024, 89%</li>
+                        <li><strong>Current Degree:</strong> B.Tech CSE, 3rd Year</li>
+                        
+                    </ul>
+                </div>
+                <div class="card">
+                    <div class="table-wrap">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Semester</th>
+                                    <th>GPA</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                
+                                <tr><td>Sem 3</td><td>9.49</td></tr>
+                                <tr><td>Sem 4</td><td>9.43</td></tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="about">
+    <section id="skills" class="section alt">
         <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>
-                        I'm a passionate developer with 3+ years of experience in creating digital solutions 
-                        that make a difference. I specialize in front-end and back-end development, with a 
-                        focus on modern technologies and best practices.
-                    </p>
-                    <p>
-                        When I'm not coding, you can find me exploring new technologies, contributing to 
-                        open-source projects, or sharing knowledge with the developer community.
-                    </p>
-                    <div class="about-stats">
-                        <div class="stat">
-                            <h3>50+</h3>
-                            <p>Projects Completed</p>
-                        </div>
-                        <div class="stat">
-                            <h3>3+</h3>
-                            <p>Years Experience</p>
-                        </div>
-                        <div class="stat">
-                            <h3>100%</h3>
-                            <p>Client Satisfaction</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills" class="skills">
-        <div class="container">
-            <h2 class="section-title">Skills & Technologies</h2>
+            <h2 class="section-title">Technical Skills</h2>
             <div class="skills-grid">
-                <div class="skill-category">
-                    <h3>Frontend</h3>
-                    <div class="skill-items">
-                        <div class="skill-item">
-                            <i class="fab fa-html5"></i>
-                            <span>HTML5</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fab fa-css3-alt"></i>
-                            <span>CSS3</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fab fa-js-square"></i>
-                            <span>JavaScript</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fab fa-react"></i>
-                            <span>React</span>
-                        </div>
-                    </div>
+                <div class="skill-card">
+                    <h3>Programming</h3>
+                    <ul class="tags">
+                        <li>Python</li><li>Java</li><li>JavaScript</li><li>C++</li>
+                    </ul>
                 </div>
-                <div class="skill-category">
-                    <h3>Backend</h3>
-                    <div class="skill-items">
-                        <div class="skill-item">
-                            <i class="fab fa-node-js"></i>
-                            <span>Node.js</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fab fa-python"></i>
-                            <span>Python</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fas fa-database"></i>
-                            <span>MongoDB</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fas fa-server"></i>
-                            <span>Express</span>
-                        </div>
-                    </div>
+                <div class="skill-card">
+                    <h3>Tools & Tech</h3>
+                    <ul class="tags">
+                        <li>Git</li><li>Docker</li><li>MERN</li>
+                    </ul>
                 </div>
-                <div class="skill-category">
-                    <h3>Tools</h3>
-                    <div class="skill-items">
-                        <div class="skill-item">
-                            <i class="fab fa-git-alt"></i>
-                            <span>Git</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fab fa-docker"></i>
-                            <span>Docker</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fab fa-aws"></i>
-                            <span>AWS</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fas fa-code"></i>
-                            <span>VS Code</span>
-                        </div>
-                    </div>
+                <div class="skill-card">
+                    <h3>Domains</h3>
+                    <ul class="tags">
+                        <li>AI/ML</li><li>Web Dev</li><li>Cloud</li>
+                    </ul>
                 </div>
+                
             </div>
         </div>
     </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
+    <section id="projects" class="section">
         <div class="container">
-            <h2 class="section-title">Featured Projects</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-image">
-                        <i class="fas fa-laptop-code"></i>
+            <h2 class="section-title">Projects</h2>
+            <div class="cards">
+                <article class="card project">
+                    <div class="project-media"><i class="fa-solid fa-robot"></i></div>
+                    <div class="project-body">
+                        <h3>FitnessHub</h3>
+                        <p>A comprehensive fitness tracking application with workout plans, nutrition tracking, and progress monitoring features.</p>
+                        <div class="tags small"><span>Python</span><span>FastAPI</span><span>SQLite</span></div>
+                        <div class="project-links">
+                            <a href="https://github.com/sakshijadhav2005/Fitness-hub.git"><i class="fa-brands fa-github"></i> Code</a>
+                            <a href="https://fitnesshub-mumc.onrender.com/"><i class="fa-solid fa-arrow-up-right-from-square"></i> Demo</a>
+                        </div>
                     </div>
-                    <div class="project-content">
+                </article>
+                <article class="card project">
+                    <div class="project-media"><i class="fa-solid fa-globe"></i></div>
+                    <div class="project-body">
+                        <h3>Life Navigator</h3>
+                        <p>A personal life management tool that helps organize goals, track habits, and plan daily activities with an intuitive interface.</p>
+                        <div class="tags small"><span>JavaScript</span><span>React</span><span>MongoDB</span></div>
+                        <div class="project-links">
+                            <a href="https://github.com/sakshijadhav2005/Life_Navigator.git"><i class="fa-brands fa-github"></i> Code</a>
+                            <a href="https://fastidious-kheer-7e2a93.netlify.app/"><i class="fa-solid fa-arrow-up-right-from-square"></i> Demo</a>
+                        </div>
+                    </div>
+
+                </article>
+              
+
+                <article class="card project">
+                    <div class="project-media"><i class="fa-solid fa-cloud"></i></div>
+                    <div class="project-body">
                         <h3>Blogsphere Application</h3>
-                        <p>A full-stack application built with React, Node.js, and MongoDB. Features include user authentication, payment processing, and admin dashboard.</p>
-                        <div class="project-tech">
-                            <span>React</span>
-                            <span>Node.js</span>
-                            <span>MongoDB</span>
-                        </div>
+                        <p>A modern blogging platform with rich text editor, user authentication, and social features for content creators.</p>
+                        <div class="tags small"><span>React</span><span>Node.js</span><span>MongoDB</span></div>
                         <div class="project-links">
-                            <a href="https://github.com/sakshijadhav2005/Blogsphere.git" class="project-link">
-                                <i class="fab fa-github"></i> Code
-                            </a>
-                            <a href="https://blogsphere-aovw.onrender.com/" class="project-link">
-                                <i class="fas fa-external-link-alt"></i> Live Demo
-                            </a>
+                            <a href="#"><i class="fa-brands fa-github"></i> Code</a>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i> Demo</a>
                         </div>
                     </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-image">
-                        <i class="fas fa-mobile-alt"></i>
-                    </div>
-                    <div class="project-content">
-                        <h3>Fitness Tracker Application</h3>
-                        <p>A responsive task management application with real-time updates, drag-and-drop functionality, and team collaboration features.</p>
-                        <div class="project-tech">
-                            <span>React.js</span>
-                            <span>Node.js</span>
-                            <span>MongoDB</span>
-                            <span>CSS3</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com/sakshijadhav2005/Fitness-hub.git" class="project-link">
-                                <i class="fab fa-github"></i> Code
-                            </a>
-                            <a href="https://fitnesshub-mumc.onrender.com/" class="project-link">
-                                <i class="fas fa-external-link-alt"></i> Live Demo
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-image">
-                        <i class="fas fa-chart-line"></i>
-                    </div>
-                    <div class="project-content">
-                        <h3>Life Navigator Application</h3>
-                        <p>An interactive dashboard for data visualization with real-time charts, customizable widgets, and export functionality.</p>
-                        <div class="project-tech">
-                            <span>React.js</span>
-                            <span>Node.js</span>
-                            <span>MongoDB</span>
-                            <span>CSS3</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com/sakshijadhav2005/Life_Navigator.git" class="project-link">
-                                <i class="fab fa-github"></i> Code
-                            </a>
-                            <a href="https://fastidious-kheer-7e2a93.netlify.app/" class="project-link">
-                                <i class="fas fa-external-link-alt"></i> Live Demo
-                            </a>
-                        </div>
-                    </div>
-                </div>
+                </article>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
+    <section id="certifications" class="section alt">
         <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <h3>Let's work together!</h3>
-                    <p>I'm always interested in new opportunities and exciting projects. Feel free to reach out!</p>
-                    <div class="contact-details">
-                        <div class="contact-item">
-                            <i class="fas fa-envelope"></i>
-                            <span>jadhavsakshi389@gmail.com</span>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fas fa-phone"></i>
-                            <span>+1 9307656504</span>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <span>Baramati, Maharashtra, India</span>
-                        </div>
-                    </div>
-                    <div class="social-links">
-                        <a href="https://github.com/sakshijadhav2005/" class="social-link">
-                            <i class="fab fa-github"></i>
-                        </a>
-                        <a href="https://www.linkedin.com/in/sakshi-jadhav-3b5408337/" class="social-link">
-                            <i class="fab fa-linkedin"></i>
-                        </a>
-                       
-                    </div>
-                </div>
-                <form class="contact-form">
-                    <div class="form-group">
-                        <input type="text" id="name" name="name" placeholder="Your Name" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="email" id="email" name="email" placeholder="Your Email" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="text" id="subject" name="subject" placeholder="Subject" required>
-                    </div>
-                    <div class="form-group">
-                        <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Send Message</button>
-                </form>
+            <h2 class="section-title">Certifications / MOOCs</h2>
+            <div class="cards">
+                <article class="card"><h3>Student Members</h3><p>ISTE — 2025</p></article>
+                <article class="card"><h3>Docker & Kubernetes</h3><p>Scaler — 2025</p></article>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
+    <section id="activities" class="section">
+        <div class="container">
+            <h2 class="section-title">Co/Extra-curricular</h2>
+            <div class="grid-2">
+                <div class="card">
+                    <h3>Co-curricular</h3>
+                    <ul class="list">
+                        <li><strong>AI TALES COMPETITION</strong> - Participated in AI storytelling competition</li>
+                        <li><strong>RAG Webinar</strong> - Attended webinar on Retrieval-Augmented Generation</li>
+                        <li><strong>One Week FDP Program</strong> - Faculty Development Program participation</li>
+                        <li><strong>SIH (Smart India Hackathon)</strong> - National level hackathon participation</li>
+                        <li><strong>Walmart Hackathon</strong> - Corporate hackathon competition</li>
+                        <li><strong>CodeCraft at PICT</strong> - College hackathon event</li>
+                        <li>Workshops, Guest Talks</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3>Extra-curricular</h3>
+                    <ul class="list">
+                        <li>Sports</li>
+                        <li>Leadership roles, Event Organizing</li>
+                        <li>Mehandi Competation , Hacksphere 2k25— Volunteer work</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="goals" class="section alt">
+        <div class="container">
+            <h2 class="section-title">Career Goals / Learning Path</h2>
+            <div class="grid-2">
+                <div class="card">
+                    <h3>Short-term</h3>
+                    <ul class="list">
+                        <li>Secure internship in Web/AI</li>
+                        <li>Publish a project with 100+ stars</li>
+                        <li>Improve DSA to 500+ problems</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3>Long-term</h3>
+                    <ul class="list">
+                        <li>Build scalable, user-centric products</li>
+                        <li>Contribute to open-source communities</li>
+                        <li>Pursue research or leadership roles</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2025 Sakshi Jadhav. All rights reserved.</p>
+            <p>© <span id="year"></span>Sakshi Jadhav — All rights reserved.</p>
         </div>
     </footer>
 
+    <button id="backToTop" class="back-to-top" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
     <script src="script.js"></script>
 </body>
 </html>
+ 
